@@ -33,9 +33,7 @@ a[href="https://naver.com"] {
   color:green;
 }
 
-/*<h2 class="on-mouse">기상 클래스 선택자</h2>*/
-
-/* 가상 클래스 전택자 : 요소:상태 { ... } */
+/* 가상 클래스 선택자 : 요소:상태 { ... } */
 /* 지정한 요소의 큭정 상태레 대해서만 스타일을 적용 */
 .on-mouse:hover {
   color:red;

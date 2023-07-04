@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+#container {
+  background-color: black;
+  width: 600px;
+  height: 600px;
+}
+
+#box {
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+  /* 외부 여백 margin */
+  margin: 50px;
+}

@@ -76,3 +76,35 @@ body {
 
   font-size: 40px;
 }
+  /* font-weight: 글자 굵기 지정 */
+  .font-weight-900 {
+    font-weight: 900;
+  }
+
+  /* font-style: 글자 스타일 지정 */
+  .font-style-italic {
+    font-style: italic;
+  }
+
+  /*text-decoration : 글자 꾸밈 지정 */
+  .text-decoration-underline {
+    text-decoration: underline;
+  }
+
+  /* 배경 지정 방식 */
+  /* background-color : 배경 색상 지정 */
+  #background-1 {
+    background-color: #0000ff;
+    height: 900px;
+  }
+
+  #background-2 {
+    /* background-image: 배경 이미지 지정 */
+    height: 400px;
+    background-image: url('https://a.cdn-hotels.com/gdcs/production135/d521/bba19247-6149-43cf-8357-4ca651715730.jpg');
+    background-repeat: no-repeat;
+    /* background-position: 배경 위치 지정 */
+    background-position: 50% 50%;
+    /* background-size : 배경 크기 지정 */
+    background-size: contain;
+  }
