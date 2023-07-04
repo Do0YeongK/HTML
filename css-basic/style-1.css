@@ -1,0 +1,51 @@
+/* 주석 */
+
+/* 태그(요소) 선택자 : 태그명 { ... } */
+p {
+  color:chocolate;
+}
+
+/* 클래스 선택자 : .클래스명 { ... } */
+.color-purple {
+  color: purple;
+}
+
+/* 아이디 선택자 : #아이디명 */
+#color-green {
+  color:green;
+}
+
+/* 자손 선택자 : 조상요소 자손요소 { ... } */
+/* 조상요소 아래에 오는 자손요소에 대해 스타일 적용 */
+.super .sub-1 {
+  color: cadetblue;
+}
+
+/* 자식 선택자 : 부모요소 > 자식요소 { ... } */
+/* 부모요소의 직접적인 자식에 대해서만 스타일을 적용 */
+.super > .sub-2 {
+  color:coral;
+}
+
+/* 속성 선택자 : 요서[속성="속성값"] { ... } */
+/* 지정한 요소의 특정 속성에 대해서만 스타일을 적용 */
+a[href="https://naver.com"] {
+  color:green;
+}
+
+/*<h2 class="on-mouse">기상 클래스 선택자</h2>*/
+
+/* 가상 클래스 전택자 : 요소:상태 { ... } */
+/* 지정한 요소의 큭정 상태레 대해서만 스타일을 적용 */
+.on-mouse:hover {
+  color:red;
+}
+
+/* 가상 요소 선택자 : 요소::특정부분 { ... } */
+.commit::first-letter {
+  color:red;
+}
+
+.font-weight-900 {
+  font-weight: 900 !important;
+}
