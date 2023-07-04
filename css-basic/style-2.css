@@ -35,3 +35,24 @@ body {
   transform: rotate(15deg);
   animation: 3s ease-in 1s 2 reverse both paused slidein;
 }
+
+/* 색상 지정 방식 */
+/* 색상 명칭 */
+.color-red {
+  color: red;
+}
+
+/* RGB */
+.color-rgb-255-0-0 {
+  color: rgb(255, 0, 0)
+}
+
+/* RGBA */
+.color-rgba-255-0-0-04 {
+  color: rgba(255, 0, 0, 0.4)
+}
+
+/* HEX */
+.color-hex-ff0000 {
+  color: #ff0000;
+}
