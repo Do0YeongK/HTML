@@ -105,9 +105,12 @@ function JavaScriptBasic() {
   
   let number1: any = 10;
   let number2: any = "10";
-  
-  result = (number1 == number2);
 
+  result = (number1 == number2);  // true
+  result = (number1 === number2);  // false
+
+  result = (number1 != number2);  // false
+  result = (number1 !== number2);  // true
 
 
   return (<></>);
