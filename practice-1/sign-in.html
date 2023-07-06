@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dori Sign In</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    function onLoginClickEvent(){
+      alert('로그인 버튼 클릭');
+    }
+  </script>
 </head>
 <body>
   <div id="wrapper">
@@ -39,14 +44,14 @@
               <div class="input-box">
                 <div class="input-label">비밀번호</div>
                 <div class="input-container">
-                  <input class="input" placeholder="비밀번호를 입력해주세요." />
+                  <input class="input" type="password" placeholder="비밀번호를 입력해주세요." />
                   <div class="show-icon"></div>
                 </div>
               </div>              
             </div>
           </div>
           <div class="main-right-card-bottom">
-            <button class="sign-in-button">로그인</button>
+            <button class="sign-in-button" onClick="onLoginClickEvent()">로그인</button>
             <div class="sign-up-description">
               신규 사용자이신가요? <a href="#" class="emphasis">회원가입</a>
             </div>
