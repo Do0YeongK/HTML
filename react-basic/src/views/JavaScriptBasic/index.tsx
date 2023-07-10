@@ -112,6 +112,103 @@ function JavaScriptBasic() {
   result = (number1 != number2);  // false
   result = (number1 !== number2);  // true
 
+// 조건문
+  // 조건문의 조건이 무조건 true, false 형태의 boolean 값이 오지 않아도됨
+  // false : 0, 0.0, '', undefind, null
+  const string = '';
+  if (string) {
+
+  } 
+
+  // 반복문
+  // for, while 모두 사용가능
+  const exampleArray = ['apple', 'banana', 'carot'];
+  //! foreach 함수: 배열.forEach(반환값이 없는 함수);
+  // for (String item: exampleArray) {
+
+  // }
+  exampleArray.forEach(function (item) {
+    console.log(item);
+  });
+  //! map 함수: 배열.map(반환값이 있는 함수);
+  //!           배열을 반복하면서 함수 작업의 반환 값으로 새로운 배열을 생성하여 반환
+  const numbers = [1, 2, 3, 4, 5];
+  let resultList = numbers.map(function (item) {
+    const result = item * item;
+    return result;
+  });  // [1, 4, 9, 16, 25]
+  
+  //! filter 함수: 배열.filter(조건문을 가진 함수);
+  //!              배열을 반복하면서 함수 작성된 조건문에 부합하는 요소만 반환
+  resultList = numbers.filter(function (item) {
+    return item % 2 === 0;
+  });  // [2, 4]
+  
+  // 객체 생성
+  //! 1. JSON 형식을 이용하여 생성(바로 생성)
+  //! JSON : { 'key': 'value', 'key': 'value', ... }
+  let object1 = {
+    name: '홍길동',
+    age: 29,
+    address: '부산광역시'
+  };
+
+  //! 2. class를 이용하여 생성
+  class CHuman {
+    name: string;
+    age: number;
+    address: string;
+
+    constructor(name: string, age: number, address: string) {
+      this.name = name;
+      this.age = age;
+      this.address = address;
+    }
+  }
+  object1 = new CHuman('김철수', 30, '서울특별시');
+  
+  //! 3. interface를 이용하여 생성
+  interface IHuman {
+    name: string;
+    age: number;
+    address: string;
+  }
+  let object2: IHuman = {
+    name: '고길동',
+    age: 50,
+    address: '인천광역시'
+  }
+
+  object1.age;
+
+  //! 구조 분해 할당
+  // let name = object1.name;
+  // let age = object1.age;
+
+  let { name, age } = object1; // { name: '홍길동', age: 30, address: '부산' }
+  console.log(name);
+  console.log(age);
+
+  let { address, ...other } = object1;
+  // address: '부산', other: { name: '홍길동', age: 30 }
+  
+  let object3 = { telNumber: '010-1111-1111', email: 'email@email.com' };
+  let subObject = { ...object2, ...object3 };
+  // { name: '고길동', age: 50, address: '인천광역시', telNumber: '010-1111-1111', email: 'email@email.com' }
+
+  //! 함수
+
+  //! 함수 선언 방법
+  //! function 함수명 (매개변수: 타입, ...): 반환타입 {
+  //!   ...
+  //!   return 결과;
+  //! }
+
+  //! 화살표 함수
+  //! 함수를 변수처럼 사용하는 것
+  //! 선언 방법 
+  //! const 함수명 = (매개변수, ...) => { ... return 결과값 };
+
 
   return (<></>);
 
