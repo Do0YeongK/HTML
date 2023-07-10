@@ -1,17 +1,8 @@
-import './App.css';
-import TestComponent from './components/TestComponent;
-import './style.css';
+import React from 'react'
+import SignIn from './views/Authentication/SignIn'
 
-function App() {
-
+export default function App() {
   return (
-    <div>
-      <TestComponent />
-      <TestComponent />
-      <TestComponent />
-      <TestComponent />
-    </div>
-  );
+    <SignIn />
+  )
 }
-
-export default App;

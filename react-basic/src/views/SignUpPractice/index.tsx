@@ -8,7 +8,7 @@ function App() {
       <div id="header">
         <div className="header-logo">
           <div className="header-logo-icon"></div>
-          <div className="header-logo-text">Hoons Board</div>
+          <div className="header-logo-text">Dori Board</div>
         </div>
         <div className="header-search">
           <div className="header-search-icon"></div>
@@ -19,7 +19,7 @@ function App() {
           <div className="main-left-icon"></div>
           <div className="main-left-text-box">
             <div className="main-left-text">환영합니다!!</div>
-            <div className="main-left-text">HOONS BOARD 입니다.</div>
+            <div className="main-left-text">Dori BOARD 입니다.</div>
           </div>
         </div>
         <div className="main-right-container">
